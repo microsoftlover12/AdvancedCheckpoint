@@ -1,0 +1,7 @@
+.bigblue{
+    color: blue;
+    font-size: 15;
+    text-justify: auto;
+    font: 1em sans-serif;
+    animation: alternate;
+}

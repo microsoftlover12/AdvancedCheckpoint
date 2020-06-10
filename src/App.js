@@ -1,26 +1,73 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'index.js';
+import styles from './mystyle.css';
+import PropTypes from 'prop-types';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(Props) {
+
+  return productsTable.map((category, name, price) => {
+
+    return (
+      <table>
+        <tr>
+
+          <td>{Props.category}</td>
+          <td>{Props.name}</td>
+          <td>{Props.price}</td>
+
+        </tr>
+        <tr>
+
+          <td>{Props.category}</td>
+          <td>{Props.name}</td>
+          <td>{Props.price}</td>
+
+        </tr>
+
+        <tr>
+
+          <td>{Props.category}</td>
+          <td>{Props.name}</td>
+          <td>{Props.price}</td>
+
+        </tr>
+
+
+      </table>
+
+    )
+  })
+
+
+
+
+
+
 }
+
+
+class MyStyle extends React.Component{
+
+
+  render(){
+
+  return <h1 className={styles.bigblue}>Welcome to my first props page! </h1>
+}
+
+}
+export default MyStyle;
+
+
+
+
+ReactComponent.PropTypes={
+
+
+  category,name:PropTypes.string,
+  price:PropTypes.number
+
+};
 
 export default App;
