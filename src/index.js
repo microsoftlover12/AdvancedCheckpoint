@@ -12,22 +12,11 @@ import * as serviceWorker from './serviceWorker';
   {category: "Clothes",name:"Jacket",price:"180"}];
  
 
- 
-
-
-
-
-
-
 
 ReactDOM.render(
   <React.StrictMode>
     <App productstable={productsTable} />
-  </React.StrictMode>,
- 
-
- ReactDOM.render(<MyStyle />, document.getElementById('root')),
-ReactDom.render(productsTable,document.getElementById('root')),
+  </React.StrictMode>, document.getElementById('root'))
 
   
 );
